@@ -73,7 +73,7 @@ pub fn (mut c RawConn) write_to_ptr(addr Addr, b byteptr, len int) ?int{
 	code := error_code()
 	if code == int(error_ewouldblock) {
 		c.wait_for_write() ?
-		socket_error(C.sendto(c.sock.handle, b, len 0, &addr.addr, addr.len)) ?
+		socket_error(C.sendto(c.sock.handle, b, len, 0, &addr.addr, addr.len)) ?
 	} else {
 		wrap_error(code) ?
 	}
