@@ -4,13 +4,13 @@ import time
 import encoding
 
 enum RawProto {
-    IPPROTO_IP = 0          
+    IPPROTO_IP = 0        
     IPPROTO_HOPOPTS = 0   
     IPPROTO_ICMP = 1           
     IPPROTO_IGMP = 2           
     IPPROTO_IPIP = 4           
     IPPROTO_TCP = 6           
-    IPPROTO_EGP = 8
+    IPPROTO_EGP = 8           
     IPPROTO_PUP = 12           
     IPPROTO_UDP = 17          
     IPPROTO_IDP = 22         
@@ -28,7 +28,7 @@ enum RawProto {
     IPPROTO_DSTOPTS = 60 
     IPPROTO_MTP = 92           
     IPPROTO_ENCAP = 98          
-    IPPROTO_PIM = 103          
+    IPPROTO_PIM = 103           
     IPPROTO_COMP = 108           
     IPPROTO_SCTP = 132         
     IPPROTO_UDPLITE = 136 
